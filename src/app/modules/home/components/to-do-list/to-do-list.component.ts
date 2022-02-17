@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+import { TaskList } from '../../model/task-list';
+
 @Component({
   selector: 'app-to-do-list',
   templateUrl: './to-do-list.component.html',
-  styleUrls: ['./to-do-list.component.scss']
+  styleUrls: ['./to-do-list.component.scss'],
 })
 export class ToDoListComponent implements OnInit {
+  public taskList: Array<TaskList> = [];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
