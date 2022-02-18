@@ -22,4 +22,8 @@
       color: $secondary-text-color;
     }
   }
+
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
 }
